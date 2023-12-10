@@ -1,0 +1,11 @@
+{
+  "name": "learning-graphql",
+  "version": "1.0.0",
+  "description": "Deep-diving into GraphQL and sharing what I learn within this repository!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
