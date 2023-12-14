@@ -46,20 +46,23 @@ export default function FirstExample() {
 	// Render
 	return (
 
-		<ul>
+		<ul className="first-example">
 
 			{ /* Loop all Countries */ }
 			{ DATA?.countries?.map((COUNTRY: TCountry) => {
 
 				return (
 
-					<li key={ COUNTRY.name }>
+					<li
+						key={ COUNTRY.name }
+						className="first-example__item"
+					>
 
 						{ /* Name */ }
-						<h3> { COUNTRY.name } </h3>
+						<h3 className="first-example__item-name"> 🌆 { COUNTRY.name } </h3>
 
 						{ /* Capital */ }
-						<h6> { COUNTRY.capital } </h6>
+						<h6 className="first-example__item-capital"> { COUNTRY.capital || 'Unspecified' } </h6>
 
 					</li>
 				

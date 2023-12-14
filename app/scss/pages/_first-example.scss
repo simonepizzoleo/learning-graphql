@@ -1,0 +1,41 @@
+// Menu
+.first-example {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 0;
+    gap: 16px;
+
+    // Item
+    &__item {
+        min-width: 100%;
+        background-color: $color-white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
+
+        &-name,
+        &-capital {
+            margin: unset;
+        }
+
+        // Name
+        &-name {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        // Capital
+        &-capital {
+            font-size: 15px;
+            line-height: 22px;
+            opacity: 0.8;
+        }
+
+    }
+
+}
