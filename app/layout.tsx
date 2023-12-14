@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { GRAPHQL_CLIENT } from './graphql-client';
+import { Provider } from 'urql';
 
 // Metadata
 export const metadata: Metadata = {
@@ -12,8 +14,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 		<html lang="en">
 
-			{ /* Body */ }
-			<body> { children } </body>
+			{ /* GraphQL Client */ }
+			<Provider value={ GRAPHQL_CLIENT }>
+
+				{ /* Body */ }
+				<body> { children } </body>
+
+			</Provider>
 
 		</html>
 
