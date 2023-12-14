@@ -4,7 +4,7 @@ import { Client, cacheExchange, fetchExchange } from 'urql';
 export const GRAPHQL_CLIENT = new Client({
 
 	// Parameters
-	url: 'http://localhost:3000/graphql',
+	url: 'https://countries.trevorblades.com/graphql',
 	exchanges: [cacheExchange, fetchExchange],
 
 	// Options to send during fetch
