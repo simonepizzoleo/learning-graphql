@@ -37,8 +37,8 @@ export default function FirstExample() {
 	const [RESULT, RE_EXECUTE_QUERY] = useQuery({ query: CONTINENTS_QUERY });
 	const { data: DATA, fetching: FETCHING, error: ERROR } = RESULT;
 
-	if (FETCHING) return <p>Loading...</p>;
-	if (ERROR) return console.error('Oops, an error occurred. ' + ERROR);
+	if (FETCHING) return <p className="first-example">Loading...</p>;
+	if (ERROR) return <p className="first-example">Oops, an error occurred.</p>;
 
 	// Reduce the amount of information
 	if (DATA) DATA.countries.length = 10;
