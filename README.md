@@ -49,7 +49,7 @@ type Post {
 
 To decide what data the client needs to retrieve, it formulates a so called "query", which is an explicit request to the server for obtaining particular information.
 
-```typescript
+```graphql
 {
 
     allPersons {
@@ -83,7 +83,7 @@ Notice that each person only has a name in the response, and an age wasn't retur
 
 Let's adjust the query payload to also retrieve the age of the persons:
 
-```typescript
+```graphql
 {
 
     allPersons {
@@ -120,7 +120,7 @@ For instance, the `allPersons` fields could have a `last` parameter, in order to
 
 Here's how the query would look like:
 
-```typescript
+```graphql
 {
 
     allPersons(last: 2) {
@@ -139,7 +139,7 @@ One of the powerful tools GraphQL comes with, is naturally querying nested infor
 
 Here's how a corresponding query would look like:
 
-```typescript
+```graphql
 {
 
     allPersons {
@@ -216,7 +216,7 @@ GraphQL mades changes via the so called [mutations](https://www.howtographql.com
 
 Mutations follow the same structure of queries, but they always need to start with the `mutation` keyword:
 
-```typescript
+```graphql
 mutation {
 
     createPerson(name: "Bob", age: 36) {
@@ -233,7 +233,7 @@ mutation {
 
 When a client subscribes to an event, it initiates and holds a stable connection to the server. It will be, for instance, informed about new users being created. When some kind of event happens, the server pushes the new data to the client.
 
-```typescript
+```graphql
 subscription {
 
     newPerson {
