@@ -1,8 +1,16 @@
-'use client';
-
 import { Figtree } from 'next/font/google';
-import { GRAPHQL_CLIENT } from './graphql-client';
-import { Provider } from 'urql';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+
+	title: {
+		template: "%s • Learning GraphQL",
+		default: "Learning GraphQL"
+	},
+
+	description: "Deep-diving into GraphQL and sharing what I learn within this repository!"
+	
+};
 
 // Fonts
 const FIGTREE_FONT = Figtree({
@@ -22,13 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			className={ FIGTREE_FONT.variable }
 		>
 
-			{ /* GraphQL Client */ }
-			<Provider value={ GRAPHQL_CLIENT }>
-
-				{ /* Body */ }
-				<body> { children } </body>
-
-			</Provider>
+			{ /* Body */ }
+			<body> { children } </body>
 
 		</html>
 
