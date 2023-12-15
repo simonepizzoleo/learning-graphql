@@ -1,0 +1,28 @@
+// Menu
+.second-example {
+
+    // Item
+    &__item {
+
+        // Name
+        &-name {
+            margin: 0 0 10px 0;
+        }
+
+        // Capital
+        &-capital {
+            margin: 0 0 5px 0;
+        }
+
+    }
+
+    // Heading
+    &__heading {
+        margin: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+
+}

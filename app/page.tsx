@@ -6,7 +6,7 @@ import { GRAPHQL_CLIENT } from './graphql-client';
 import dynamic from 'next/dynamic';
 
 // Lazy imports
-const FirstExample = dynamic(() => import("@/examples/first-example"), {
+const SecondExample = dynamic(() => import("@/examples/second-example"), {
 	loading: () => <p>Loading...</p>
 });
 
@@ -18,7 +18,7 @@ export default function Home() {
 		<Provider value={ GRAPHQL_CLIENT }>
 
 			{ /* Example */ }
-			<FirstExample />
+			<SecondExample code="EU" />
 
 		</Provider>
 
