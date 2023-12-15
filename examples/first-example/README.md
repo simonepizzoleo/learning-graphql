@@ -77,7 +77,7 @@ Given the following interface, for instance, we would have the also following co
 // The interface defined for a Language,
 // that each item in the "languages" Array
 // should and must respect
-export interface TLanguage {
+export interface ILanguage {
     name: string,
     code: string
 }
@@ -87,7 +87,7 @@ export interface TLanguage {
 // inside which parameters must
 // reflect the parameters indicated
 // in its provided interface
-const LANGUAGE_OBJECT: TLanguage {
+const LANGUAGE_OBJECT: ILanguage {
     name: 'English',
     code: 'EN'
 }

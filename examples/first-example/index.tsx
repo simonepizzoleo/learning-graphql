@@ -1,7 +1,7 @@
 'use client';
 
 import { gql, useQuery } from "urql";
-import { TCountry } from "./types";
+import { ICountry } from "./types";
 
 // Queries
 const CONTINENTS_QUERY = gql`
@@ -49,7 +49,7 @@ export default function FirstExample() {
 		<ul className="first-example">
 
 			{ /* Loop all Countries */ }
-			{ DATA?.countries?.map((COUNTRY: TCountry) => {
+			{ DATA?.countries?.map((COUNTRY: ICountry) => {
 
 				return (
 

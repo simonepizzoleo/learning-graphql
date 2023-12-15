@@ -1,12 +1,12 @@
 // Country
-export interface TCountry {
+export interface ICountry {
     name: string,
     capital: string,
-    languages: TLanguage[]
+    languages: ILanguage[],
 }
 
 // Language
-export interface TLanguage {
+export interface ILanguage {
     name: string,
     code: string
 }
