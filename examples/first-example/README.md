@@ -57,7 +57,7 @@ Below is how we handled the response from the server, using one of the built-in 
 
 This function returns some parameters which we can destructure and assign to our custom variables, but the one which we need most is the `RESULT` variable (that you can of course call as you prefer). Indeed, `RESULT` will be in turn destructured and will provide us some convenient variables which will almost automatically handle the various statuses of the response already by themselves.
 
-![Handle the response from the server](images/handle-response.png)
+![Handle the response from the server](../../public/first-example/handle-response.png)
 
 For each of the variables coming out from the `RESPONSE`, we can conditionally print a different return statement, and easily handle the loading, error and successful states from the response. Easy, isn't it?
 
